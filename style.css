@@ -1,0 +1,458 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+    background-color:#000;
+    color:#fff;
+    overflow: hidden; /*The overflow is clipped, and the rest of the content will be invisible */
+}
+
+.main{
+    display:flex; /*all content in one line*/
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.sidebar{
+    background-color: #000;
+    width: 25rem;
+    border-radius: 1rem; /*16px*/
+    margin-right: 0.5rem;
+}
+
+.main-content{
+    background-color: #121212;
+    flex: 1;  /*accupy all space whitch is empty*/
+    border-radius: 1rem;
+    overflow: auto; /*Similar to scroll, but it adds scrollbars only when necessary */
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.music-player{
+    background-color: black;
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    height: 72px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction : column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem o.75rem;
+}
+
+.nav-option {
+    line-height: 2.3rem;
+    opacity: 0.7;  /* The opacity property specifies the opacity/transparency of an element. */
+    padding:  0.1rem;
+}
+
+.nav-option:hover {
+    opacity: 1 ; 
+    cursor: pointer;  
+}
+
+.nav-option i {
+font-size: 1.25rem;
+margin-left: 0.9rem;
+}
+
+.nav-option a {
+    font-size: 1rem; 
+    margin-left: 0.3rem;
+}   
+
+  .library{
+    background-color:#121213;
+    border-radius: 1rem;
+    margin-top: 0.7rem;
+
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.7;
+    line-height: 2.3rem;
+    opacity: 0.7;  
+    padding:  0.1rem;
+}
+
+.options:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.lib-option{
+    margin-left: 0.9rem;
+}
+.lib-option img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.icons{
+    font-size: 1.25rem;
+    display: flex;
+}
+
+.icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+
+.icons i:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.box{
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.75rem 1rem;   /*Padding is used to create space around an element's content, inside of any defined borders.*/
+}
+
+
+.box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.box-p2{
+    font-size: 0.85rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+.badge{
+    background-color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+}
+
+
+
+
+
+
+     
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+  }
+  
+  .sticky-nav-icons {
+    opacity:0.7;
+    margin-left: 0.75rem;
+    display:flex;
+    cursor: pointer;
+  }
+
+  .sticky-nav-icons:hover {
+    opacity:1;
+    cursor: pointer;
+  }
+
+  .greater{
+    margin-left: 1rem;
+  }
+  
+  .sticky-nav-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .nav-item {
+    margin-right: 1rem;
+  }
+  
+  @media (max-width: 1000px) {
+    .hide {
+      display: none;
+    }
+  }
+  .dark-badge{
+     background-color: #000;
+     color:#fff;
+     border: 1px solid #fff;
+  }
+
+  .dark-badge:hover{
+    background-color: #fff;
+    color:#000;
+    border: 1px solid #fff;
+    cursor: pointer;
+ }
+
+  .user{
+    opacity:0.7;
+  }
+
+  .user:hover{
+    opacity:1;
+    cursor: pointer;
+  }
+  
+
+
+
+
+
+
+
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+ 
+.cards-container{
+    display : flex;
+    flex-wrap: wrap;  /*The flex-wrap property specifies whether the flexible items should wrap or not.
+                       Note: If the elements are not flexible items, the flex-wrap property has no effect.*/
+}
+
+.card-img{
+    width:100%;
+    border-radius: 0.5rem;
+}
+
+.card-title{
+    font-weight: 600;
+}
+
+.card-info{
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.footer{
+    height:300px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    width:90%;
+    height: 30%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:5rem;
+}
+
+.album{
+    width: 25%;
+}
+
+.player{
+    width: 50%;
+}
+
+.controls{
+    width: 25%;
+}
+
+.player-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-control-icon{
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity:0.7;
+}
+
+.player-control-icon:hover{
+   opacity:1;
+   cursor: pointer;
+}
+
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.09rem;
+    
+}
+
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width:1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+.album{
+    display: flex;
+    padding:1rem;
+}
+
+.pic{
+    margin-top:3rem;
+    margin-bottom:3rem;
+    height:3rem;
+}
+.para-album{
+    margin-left: 1rem;
+    margin-top: -0.1rem;
+    line-height: 0.09rem;
+    font-size:0.8rem;
+    
+}
+
+.tital-album{
+    font-size:200;
+    font-weight:200;
+    margin-top:4rem;
+}
+
+.info-album{
+    font-size:200;
+    font-weight:200;
+    margin-bottom:3rem;
+    line-height: 0.8rem;
+    font-size:0.6rem;
+    opacity:0.7;
+}
+
+.like-album{
+    margin-top: 2rem;
+   margin-left: 1rem;
+}
+
+.like{
+    height:1rem;
+    width:1rem;
+    margin-top: 1.8rem;
+}
+
+.icon2{
+    height:1.5rem;
+    width:1.5rem;
+    margin-top: 3.7rem;
+    margin-left: 0.5rem;
+}
+
+.controls{
+    display: flex;
+    height:5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.con-1{
+    height:2rem;
+    width:2rem;
+    margin-top: 1rem;
+}
+
+.con-2{
+    height:2rem;
+    width:2rem;
+    margin-left: 0.3rem;
+    margin-top: 1.1rem;
+}
+
+.con-3{
+    height:1.1rem;
+    width:1.1rem;
+    margin-left: 0.5rem;
+    margin-top: 1.1rem;
+}
+
+.con-4{
+    height:0.9rem;
+    width:0.9rem;
+    margin-left: 0.6rem;
+    margin-top: 1.2rem;
+}
+
+.con-5{
+    height:2.1rem;
+    width:2.1rem;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+
+.control-1{
+    opacity:0.3;
+}
+
+.control-1:hover{
+    opacity:2;
+    cursor: pointer;
+}
+
+
+.volume-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.volume-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.09rem;
+    
+}
+
+.volume-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.5rem;
+    width:0.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-top: -3px;
+}
+
